@@ -2,10 +2,15 @@ body {
     background-color: black;
 }
 
+h1 {
+    color: yellow;
+    text-align: center;
+}
+
 
 .position {
     position: absolute;
-    left: 50%;
+    left: 40%;
     bottom: 50%;
     transform: translate(-50%, 50%);
 }
@@ -14,6 +19,7 @@ body {
 .sides{
     width: 100%;
     border-top: 30px solid lime;
+    left: 50%;
 }
 
 .top {
@@ -35,13 +41,15 @@ body {
     border-top-right-radius: 120px;
     border-bottom-left-radius: 120px;
     border-bottom-right-radius: 120px;
-}
+    animation: munch .2s infinite;
+} 
 
 .dot {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background-color: orange;
+    animation: beEaten .3s infinite;
 }
 
 .one {
@@ -66,4 +74,24 @@ body {
 
 .six {
     left: 100%;
+}
+
+@keyframes munch {
+    from {
+        border-right: 120px solid transparent;
+    }
+
+    to {
+        border-right: 120px solid red;
+    }
+}
+
+@keyframes beEaten {
+    from {
+        transform: translate(0 , 25px);
+    }
+
+    to {
+        transform: translate(-120px , 25px);
+    }
 }
