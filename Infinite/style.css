@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+}
+
+
+.position {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+.sides{
+    width: 100%;
+    border-top: 30px solid lime;
+}
+
+.top {
+    top: -20%;
+}
+
+.bottom {
+    bottom: 20%;
+}
+
+#pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 120px solid transparent;
+    border-top: 120px solid red;
+    border-left: 120px solid red;
+    border-bottom: 120px solid red;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+.dot {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.one {
+    left: 50%;
+}
+
+.two {
+    left: 60%;
+}
+
+.three {
+    left: 70%;
+}
+
+.four {
+    left: 80%;
+}
+
+.five {
+    left: 90%;
+}
+
+.six {
+    left: 100%;
+}
