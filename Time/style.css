@@ -27,7 +27,7 @@ div {
 
 img {
     width: 100%;
-    animation: spin 1s infinite
+    animation: spin 2s infinite
 }
 
 @keyframes spin {
