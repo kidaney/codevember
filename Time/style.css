@@ -1,0 +1,46 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/00/5c/c0/005cc0109cf23ee4da7e66f6c9e3b2f3.jpg);
+    background-size: cover;
+}
+
+h1, 
+p {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    transform: translate(-50%, 50%);
+    font-size: 5vw;
+}
+
+div {
+    width: 10vmax;
+    height: 15vmax;
+    position: absolute;
+    left: 25%;
+    bottom: 60%;
+    transform: translate(-50%, 50%)
+}
+
+img {
+    width: 100%;
+    margin: auto;
+    animation: spin 1s infinite
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+}
