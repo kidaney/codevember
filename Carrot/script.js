@@ -33,7 +33,7 @@ class Carrot {
 }
 
 //loop through amount of carrots that will be displayed
-var amountOfCarrots = 200;
+var amountOfCarrots = 20;
 var carrot = [];
 for(let i = 0; i < amountOfCarrots; i++){
     //where will they show
@@ -44,7 +44,7 @@ for(let i = 0; i < amountOfCarrots; i++){
 
 function draw() {
     // context.createPattern("http://www.howardfarms.co.uk/public/img/upload/background/carrot-land-required.jpg", draw('no-repeat'));
-    var my_gradient = context.createLinearGradient(0, 100, 2, 600);
+    var my_gradient = context.createLinearGradient(0, 0, 0, 400);
     my_gradient.addColorStop(0, "skyblue");
     my_gradient.addColorStop(1, "green");
     context.fillStyle = my_gradient;
