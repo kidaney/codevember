@@ -13,7 +13,7 @@ const context = canvas.getContext("2d");
 var img = new Image();
 img.src = "https://cdn.shopify.com/s/files/1/0080/8372/products/tattly_carrot_julia_rothman_00_300x300.png?v=1532012991"
 
-
+//template for the carrot
 class Carrot {
     constructor(x, y){
         this.x = x;
