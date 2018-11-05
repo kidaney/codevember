@@ -5,6 +5,10 @@ function sunnyWeather() {
     alert("Here we have some sunny weather")
     // <div class="sun"></div>
     //     <div class="cloud x1"></div>
+    while(weather.firstChild){
+        weather.removeChild(weather.firstChild)
+    }
+
     weather.className = "sunny";
 
     const clouds = ["s1", "s2", "s3", "s4", "s5"];
@@ -35,8 +39,13 @@ function rainyWeather() {
     //         <div class=drop></div>
     //     </div>
     // </div>
+    while(weather.firstChild){
+        weather.removeChild(weather.firstChild)
+    }
+
     weather.className = "rainy";
-    const clouds = ["r1", "r2", "r3", "r4", "r5"];
+    const clouds = ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"];
+    //"r6", "r7", "r8", "r9", "r10"
     for(let i = 0; i < clouds.length; i++) {
         const cloud = document.createElement("div");
         cloud.className = "rainy-cloud";
