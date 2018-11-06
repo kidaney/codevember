@@ -44,7 +44,7 @@ function rainyWeather() {
     }
 
     weather.className = "rainy";
-    const clouds = ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"];
+    const clouds = ["r1", "r2", "r3", "r4", "r5"];
     //"r6", "r7", "r8", "r9", "r10"
     for(let i = 0; i < clouds.length; i++) {
         const cloud = document.createElement("div");
@@ -70,3 +70,5 @@ function rainyWeather() {
    
 
 }
+
+//want to bring in a weather api that will call on the functions depending on the weather
