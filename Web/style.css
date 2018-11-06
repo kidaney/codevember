@@ -1,0 +1,195 @@
+body {
+    background-color: #e6e6e6;
+}
+
+header {
+    width: 80%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
+    font-size: 5vw;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.spider-container {
+    position: absolute;
+    left: 20%;
+    bottom: 60%;
+    transform: translate(-50%, 50%);
+}
+
+.spider {
+    animation: dance 5s infinite;
+}
+
+.spider-web {
+    width: 2px;
+    height: 195px;
+    background-color: black;
+    margin-left: 75px;
+}
+
+.body {
+    width: 150px;
+    height: 80px;
+    border-radius: 100px/50px;
+    background-color: black;
+    position: relative;
+}
+
+.eye {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.eye::after{
+    content: "";
+    display: block;
+    margin: 55%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.eye-left {
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+}
+
+.eye-right {
+    position: absolute;
+    left: 60%;
+    bottom: 20%;
+}
+
+.leg {
+    width: 150px;
+    height: 80px;
+    border-radius: 100px/50px;
+    border-top: 5px solid black;
+    position: absolute;
+}
+
+.legs-left {
+    position: absolute;
+    left: 80%;
+    bottom: 80%;
+    transform: rotate(-15deg)
+}
+
+.legs-right {
+    position: absolute;
+    left: -80%;
+    bottom: 130%;
+    transform: rotate(15deg)
+}
+
+.l1 {
+    transform: translate(0px, -5px);
+}
+
+.l2 {
+    transform: translate(0px, -15px);
+}
+
+.l3 {
+    transform: translate(0px, 5px);
+}
+
+.l4 {
+    transform: translate(0px, 15px);
+}
+
+.r1 {
+    transform: translate(0px, 5px);
+}
+
+.r2 {
+    transform: translate(0px, 15px);
+}
+
+.r3 {
+    transform: translate(0px, -5px);
+}
+
+.r4 {
+    transform: translate(0px, -15px);
+}
+
+.web {
+    width: 70vw;
+    height: 50vw;
+    margin: auto;
+}
+
+.dev {
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    left: 52%;
+    bottom: 10%;
+    transform: translate(-50%, 50%);
+    background-image: url(https://appliedtech.iit.edu/sites/sat/files/elements/INTM/pictures/icons/softwaredev.png);
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.talkbubble {
+    padding: 5px;
+    color: white;
+    font-family: cursive;
+    width: 120px;
+    height: 80px;
+    background: #ff8c1a;
+    position: relative;
+    border-radius: 10px;
+}
+.talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #ff8c1a;
+    border-bottom: 13px solid transparent;
+}
+
+.bubble-container {
+    position: absolute;
+    left: 40%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+@keyframes dance {
+    0% {
+        transform: translateY(0px)
+    }
+
+    25% {
+        transform: translateY(-30px)
+    }
+
+    50% {
+        transform: translateY(-60px)
+    }
+
+    75% {
+        transform: translateY(-30px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
