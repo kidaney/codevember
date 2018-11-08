@@ -46,40 +46,25 @@ function displayInfo(i){
         }
 }
 
-// function onMouseOver() {
-//     for(let i = 0; i < anyMarker.length; i++){
-//         anyMarker[i].onmouseover = function() {
-//             displayInfo(i);
-//         }
-//     }
-// }
+var delayMouseover = function (aMarker, modal) {
+    var timeout = null;
 
-// function onMouseOver() {
-    for(let i = 0; i < anyMarker.length; i++){
-        anyMarker[i].onmouseover = function() {
-            delayMouseover(anyMarker[i], displayInfo(i));
-            // displayInfo(i);
-        }
-    }
-// }
-
-let delayMouseover = function (aMarker, modal) {
-    let timeout = null;
-    aMarker[i].onmouseover = function() {
-        // Set timeout to be a timer which will invoke callback after 1s
-        timeout = setTimeout(modal, 5000);
+    aMarker.onmouseenter = function() {
+        console.log("modal: ", modal)
+        timeout = setTimeout(modal, 250);
     };
 
-    aMarker[i].onmouseout = function() {
-        // Clear any timers set to timeout
+    aMarker.onmouseleave = function() {
         clearTimeout(timeout);
     }
 };
 
 
-
-
-
+for(let i = 0; i < anyMarker.length; i++){
+    anyMarker[i].onmouseover = function() {
+        delayMouseover(anyMarker[i], function () { displayInfo(i); });
+    }
+}
 
 span.onclick = function() {
     info.style.display = "none";
