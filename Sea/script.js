@@ -4,10 +4,9 @@ let span = document.getElementsByClassName("close")[0];
 
 let anyMarker = document.getElementsByClassName("marker");
 
-//currently trying to set a delay when display information
+//currently trying to set a delay when the mouseover event is triggered
 
-function displayInfo(){
-    setTimeout(function() {
+function displayInfo(i){
         info.style.display = "block";
         if(anyMarker[i].id === "mediterranean"){
             document.getElementById("text").innerHTML = "This is all about the Mediterranean Sea";
@@ -45,13 +44,33 @@ function displayInfo(){
         if(anyMarker[i].id === "north"){
             document.getElementById("text").innerHTML = "This is all about the North Sea";
         }
-    }, 2000)
-    
 }
 
-for(let i = 0; i < anyMarker.length; i++){
-        anyMarker[i].onmouseover = displayInfo();
+function onMouseOver() {
+    for(let i = 0; i < anyMarker.length; i++){
+        anyMarker[i].onmouseover = function() {
+            displayInfo(i);
+        }
+    }
 }
+
+let delayMouseover = function (aMarker, modal) {
+    let timeout = null;
+    aMarker.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(modal, 1000);
+    };
+
+    aMarker.onmouseout = function() {
+        // Clear any timers set to timeout
+        clearTimeout(timeout);
+    }
+};
+
+
+delayMouseover(anyMarker, onMouseOver());
+
+
 
 span.onclick = function() {
     info.style.display = "none";
