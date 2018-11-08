@@ -1,6 +1,7 @@
 body {
-    background-color: #ffff80;
-    font-family: Arial, Helvetica, sans-serif
+    background-color: #ffffb3;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://www.energy.gov/sites/prod/files/styles/borealis_article_hero_respondmedium/public/ocean%20waves%20without.png?itok=Hr6ZJ0ub)
 }
 
 .intro {
@@ -8,7 +9,7 @@ body {
     margin: auto;
     width: 60%;
     text-align: center;
-    color: #008fb3;
+    color: #99ebff;
 }
 
 .mapFrame {

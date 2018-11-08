@@ -57,7 +57,7 @@ function displayInfo(i){
 // function onMouseOver() {
     for(let i = 0; i < anyMarker.length; i++){
         anyMarker[i].onmouseover = function() {
-            delayMouseover(anyMarker[i], alert("your error lies here"));
+            delayMouseover(anyMarker[i], displayInfo(i));
             // displayInfo(i);
         }
     }
