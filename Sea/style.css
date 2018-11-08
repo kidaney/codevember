@@ -63,7 +63,53 @@ body {
     top: 79%;
 }
 
-/* still placing all the markers */
+.m5 {
+    position: absolute;
+    left: 28%;
+    top: 72%;
+}
+
+.m6 {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+}
+
+.m7 {
+    position: absolute;
+    left: 86%;
+    top: 50%;
+}
+
+.m8 {
+    position: absolute;
+    left: 84%;
+    top: 110%;
+}
+
+.m9 {
+    position: absolute;
+    left: 83%;
+    top: 97%;
+}
+
+.m10 {
+    position: absolute;
+    left: 68%;
+    top: 77%;
+}
+
+.m11 {
+    position: absolute;
+    left: 62%;
+    top: 78%;
+}
+
+.m12 {
+    position: absolute;
+    left: 49%;
+    top: 53%;
+}
 
 .modal {
     display: none; 
