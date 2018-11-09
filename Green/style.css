@@ -2,7 +2,6 @@ body {
     background-color: green;
     background-image: url(https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2017/09/forest-07.jpg);
     background-attachment: fixed;
-
 }
 
 h1 {
@@ -28,12 +27,11 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2vm;
     text-align: center;
-
     position: relative;
 }
 
 .hex {
-    transition: .3s ease;
+    transition: .2s ease;
     opacity: 0;
     position: absolute;
     top: 50%;

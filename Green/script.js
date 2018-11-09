@@ -1,70 +1,66 @@
-const shadeContainer = document.getElementById("allThatShade");
-
 const fiftyShades = [
 
     "Artichoke", 
-    "Artichoke green",
+    "Artichoke Green",
     "Asparagus",
     "Avocado",
-    "Dark green",
-    "Fern green",
-    "Forest green",
-    "Green earth",
-    "Hooker's green",
-    "Jungle green",
-    "Laurel green",
-    "Light green",
+    "Dark Green",
+    "Fern Green",
+    "Forest Green",
+    "Green Earth",
+    "Hooker's Green",
+    "Jungle Green",
+    "Laurel Green",
+    "Light Green",
     "Mantis",
-    "Mint green",
-    "Moss green",
-    "Dark moss green",
-    "Myrtle green",
-    "Pine green",
-    "Reseda green",
-    // "Sap green",
-    "Shamrock green",
-    "Tea green",
+    "Mint Green",
+    "Moss Green",
+    "Dark Moss Green",
+    "Myrtle Green",
+    "Pine Green",
+    "Reseda Green",
+    "Shamrock Green",
+    "Tea Green",
     "Teal",
     "Olive",
     "Green",
     "Green (HTML/CSS color)",
-    "Dark green (X11)",
+    "Dark Green (X11)",
     "Green (CMYK)",
     "Green (NCS)",
     "Green (Munsell)",
     "Green (Pantone)",
     "Green (Crayola)",
-    "Army green",
-    "Bottle green",
-    "Bright green",
-    "Bright mint",
-    "Brunswick green",
-    "Cal Poly Pomona green",
-    "Castleton green",
+    "Army Green",
+    "Bottle Green",
+    "Bright Green",
+    "Bright Mint",
+    "Brunswick Green",
+    "Cal Poly Pomona Green",
+    "Castleton Green",
     "Celadon",
-    "Celadon green",
-    "Dark pastel green",
-    "Dartmouth green",
+    "Celadon Green",
+    "Dark Pastel Green",
+    "Dartmouth Green",
 	"Emerald",
     "Feldgrau",
-    "GO Transit green",
+    "GO Transit Green",
     "Green-yellow",
     "Harlequin",
-    "Hunter green",
-    "India green",
-    "Islamic green"
+    "Hunter Green",
+    "India Green",
+    "Islamic Green"
 
 ];
 
 for(let i = 0; i < fiftyShades.length; i++){
+    const shadeContainer = document.getElementById("allThatShade");
     const div = document.createElement('div');
     div.className = "shade " + i;
     const hex = document.createElement('div');
     hex.className = "hex"
     const text = document.createElement('div');
     text.className = "text"
-    // const colorName = document.createTextNode(fiftyShades[i])
-    
 
     switch(div.className){
         case "shade 0":
@@ -222,10 +218,7 @@ for(let i = 0; i < fiftyShades.length; i++){
 
     }
 
-    const hexText = document.createTextNode(fiftyShades[i] + " " + div.style.backgroundColor);
-
-    // const colorNText = colorName + " " + hexText
-    // console.log(div.className)
+    const hexText = document.createTextNode(fiftyShades[i] + ": " + div.style.backgroundColor);
     text.appendChild(hexText);
     hex.appendChild(text);
     div.append(hex);
