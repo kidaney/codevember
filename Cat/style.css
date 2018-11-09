@@ -1,0 +1,24 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1200px-Cat_poster_1.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+article {
+    background-color: rgba(38, 38, 38, .8);
+    width: 70%;
+    margin: auto;
+    padding: 5%;
+}
+
+.heading {
+    color: white;
+    font-size: 3vw;  
+    text-align: center;
+}
+
+.bunchOText {
+    padding: 10px;
+    color: white;
+    font-size: 1.5vw;
+}
