@@ -58,14 +58,13 @@ const fiftyShades = [
 
 for(let i = 0; i < fiftyShades.length; i++){
     const div = document.createElement('div');
-    const p = document.createElement('p');
-    const colorName = document.createTextNode(fiftyShades[i])
     div.className = "shade " + i;
-    console.log(div.className)
-    p.appendChild(colorName);
-    div.appendChild(p);
-
-    shadeContainer.appendChild(div);
+    const hex = document.createElement('div');
+    hex.className = "hex"
+    const text = document.createElement('div');
+    text.className = "text"
+    // const colorName = document.createTextNode(fiftyShades[i])
+    
 
     switch(div.className){
         case "shade 0":
@@ -106,7 +105,6 @@ for(let i = 0; i < fiftyShades.length; i++){
             break;
         case "shade 12":
             div.style.backgroundColor = "#74C365";
-            console.log("lightgreen");
             break;
         case "shade 13":
             div.style.backgroundColor = "#98FB98";
@@ -223,6 +221,16 @@ for(let i = 0; i < fiftyShades.length; i++){
             console.log("No color available for this id");
 
     }
+
+    const hexText = document.createTextNode(fiftyShades[i] + " " + div.style.backgroundColor);
+
+    // const colorNText = colorName + " " + hexText
+    // console.log(div.className)
+    text.appendChild(hexText);
+    hex.appendChild(text);
+    div.append(hex);
+
+    shadeContainer.appendChild(div);
 
 }
 
